@@ -45,24 +45,24 @@ h5 {
     height: 100%;
 }
 
-
 .text-center {
     text-align: center;
 }
 
 .header_bg {
-    background: url("../assets/laptop.jpg") no-repeat;
+    background: url("../assets/women.jpg") no-repeat;
     width: 100%;
     height: 100vh;
     background-position: center;
     background-size: cover;
     position: relative;
     color: var(--white);
+    box-shadow: 0px 1px 18px 0px rgba(60, 0, 10, 0.7);
 }
 
 .header_bg_mask {
     content: "";
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(60, 0, 10, 0.3);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -82,13 +82,15 @@ h5 {
 
 .nav-btn {
     border: 0;
-    border-radius: 0.3rem;
+    border-radius: 0.2rem;
     padding: 0.4rem 0.5rem;
     background-color: var(--main-nav-btn);
+    box-shadow: 1px 1px 1px 0px rgba(39, 39, 39, 0.3);
     font-size: 1.5rem;
+    cursor: pointer;
     position: fixed;
     right: 1rem;
-    top: 0.5rem;
+    top: 1rem;
     outline: none;
     z-index: 10000;
 }
@@ -101,8 +103,14 @@ h5 {
     display: none;
 }
 
+#nav-logo {
+    text-shadow: 6px 7px 3px rgba(0, 0, 0, 0.8);
+    font-family: 'Merienda', cursive;
+}
+
 .nav-items {
     display: none;
+    flex-direction: column;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -126,15 +134,15 @@ h5 {
     border-radius: 0.3rem;
     padding: 0.4rem 0.5rem;
     background-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
     position: fixed;
     right: 1rem;
-    top: 0.5rem;
+    top: 1rem;
     z-index: 10001;
 }
 
 .nav-links,
-.social-icons,
 #nav-logo {
     text-decoration: none;
     color: var(--white);
@@ -167,6 +175,18 @@ h5 {
     margin: 2rem 1rem 0;
 }
 
+.fa-github {
+    color: rgb(173, 92, 81);
+}
+
+.fa-linkedin {
+    color: rgb(72, 117, 180);
+}
+
+.fa-facebook-square {
+   color: rgb(59, 89, 152);
+}
+
 .nav-items a {
     display: flex;
     padding: 0.62rem;
@@ -178,12 +198,19 @@ h5 {
 }
 
 .main-title {
+    display: block;
     text-align: center;
-    color: rgba(255, 255, 255, 0.8)
+    color: rgb(211, 186, 197);
+    text-shadow: 2px 3px 3px rgba(146, 42, 107, 0.4), 6px 7px 3px rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
 }
 
 .angle-icon {
-    color: var(--white);
+    color: rgb(37, 66, 104);
     height: 10rem;
     width: 10rem;
     font-size: 1.5rem;
@@ -208,6 +235,7 @@ section {
 }
 
 .section-title {
+    font-family: 'Merienda', cursive;
     margin-bottom: 6rem;
     font-size: 2rem;
     font-weight: 700;
@@ -227,6 +255,7 @@ section {
 .card.card-about {
     border-top: 2px solid var(--navy-blue);
     border-radius: 0;
+    line-height: 1.2;
 }
 
 .card-picture {
@@ -269,6 +298,7 @@ section {
     margin-bottom: 5rem;
 }
 
+/* TODO: DRY THIS CODE */
 .card.card-html {
     box-shadow: 3px 3px 8px 0px rgba(227, 79, 38, 0.5);
     border: 2px solid rgb(227, 79, 38);
@@ -305,10 +335,9 @@ section {
     height: auto;
     width: 100%;
     filter: sepia(50%);
-
 }
 
-.img-mask {
+.portfolio-img-mask {
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
@@ -322,7 +351,7 @@ section {
     padding: 1rem;
 }
 
-.img-wrapper {
+.portfolio-img-wrapper {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -388,10 +417,9 @@ section {
     margin-right: 2rem;
 }
 
-
 .submit {
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     box-shadow: 0px 3px 4px 0px #223950;
     background-color: rgba(224, 211, 211, 0.8);
     color: rgb(50, 53, 53);
@@ -407,9 +435,8 @@ section {
     text-align: center;
 }
 
-#message {
+textarea {
     resize: none;
-
 }
 
 ::-webkit-input-placeholder {
@@ -430,14 +457,55 @@ footer {
 
 /* MEDIA */
 
-@media(min-width: 768px) {
+@media only screen and (max-width: 991px) and (min-width: 400px) {
     .container {
         max-width: 720px;
         margin: 0 auto;
     }
+
+    .main-title {
+        display: flex;
+        justify-content: center;
+        font-size: 2.3rem;
+        text-shadow: 2px 3px 3px rgba(29, 12, 61, 0.8), 6px 7px 3px rgba(0, 0, 0, 0.9);
+    }
+
+    .main-title-color {
+        color: rgb(158, 14, 78);
+        margin-left: 1rem;
+    }
+
+    .nav-btn {
+        font-size: 2rem;
+        right: 2rem;
+    }
+
+    .nav-items:hover+.collapse-btn,
+    .nav-btn:focus~.collapse-btn {
+        display: block;
+        border: 0;
+        border-radius: 0.3rem;
+        padding: 0.4rem 0.5rem;
+        background-color: transparent;
+        font-size: 2rem;
+        cursor: pointer;
+        position: fixed;
+        right: 2rem;
+        top: 1rem;
+        z-index: 10001;
+    }
+
+    .card-about {
+        font-size: 1.1rem;
+        line-height: 1.48;
+    }
 }
 
 @media(min-width: 992px) {
+    .main-nav {
+        font-size: 1.3rem;
+    }
+
     .container {
         max-width: 960px;
         margin: 0 auto;
@@ -453,7 +521,8 @@ footer {
     }
 
     .nav-items {
-        display: block;
+        display: flex;
+        flex-direction: row;
         position: absolute;
         background-color: transparent;
         top: 0.5rem;
@@ -462,7 +531,7 @@ footer {
         left: unset;
         width: auto;
     }
-
+    
     .nav-items .nav-links {
         flex-direction: row;
     }
@@ -472,13 +541,37 @@ footer {
     }
 
     .nav-items li:hover {
-        opacity: 0.8;
+        opacity: 0.7;
     }
+
     .social-icons li {
         margin: 0 1rem;
     }
+
+    .main-title {
+        display: flex;
+        justify-content: center;
+        font-size: 4rem;
+        color: rgb(211, 186, 197);
+        text-shadow: 2px 3px 3px rgba(29, 12, 61, 0.8), 6px 7px 3px rgba(0, 0, 0, 0.9);
+    }
+
+    .main-title-color {
+        color: rgb(158, 14, 78);
+        margin-left: 1rem;
+    }
+
     .angle-icon {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+
+    section {
+        padding-top: 3rem;
+    }
+
+    .card-about {
+        font-size: 1.2rem;
+        line-height: 1.5;
     }
 
     .portfolio-img {
@@ -529,7 +622,27 @@ footer {
 
 /* Animations */
 @keyframes shine {
-    0% {opacity: 1;}
-    50% {opacity: 0.5;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }

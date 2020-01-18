@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap&subset=latin-ext"
     rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap&subset=latin-ext" rel="stylesheet">
   <title>Portfolio</title>
 </head>
 
@@ -23,43 +23,40 @@
         <button class="nav-btn"><i class="fas fa-bars white-btn"></i></button>
         <div class="nav-items">
           <ul class="nav-links">
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <ul class="social-icons">
-              <li><a href="https://github.com/EmiliaJacaszek" target=_blank><i class="fab fa-github"></i></a></li>
-              <li><a href="https://www.linkedin.com" target=_blank><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="https://www.facebook.com" target=_blank><i class="fab fa-facebook-square"></i></a></li>
-           </ul>
-        </ul>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+          <ul class="social-icons">
+            <li><a href="https://github.com/EmiliaJacaszek" target=_blank><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/emilia-jacaszek-6a798b153/" target=_blank><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com" target=_blank><i class="fab fa-facebook-square"></i></a></li>
+          </ul>
         </div>
         <button class="white-btn collapse-btn"><i class="fas fa-times"></i></button>
       </nav>
-      <h1 class="main-title">Front-end Developer</h1>
+      <h1 class="main-title">FRONT-END <div class="main-title-color"> DEVELOPER</div>
+      </h1>
       <a class="angle-btn" href="#about"><i class="fas fa-angle-down angle-icon"></i></a>
     </div>
   </header>
+
   <main>
     <section id="about">
       <div class="container">
-        <h2 class="section-title text-center">About me</h2>
+        <h2 class="section-title text-center">O mnie</h2>
         <div class="card card-about">
           <img class="card-picture picture-radius" src="assets/picture.jpg" alt="Profile picture">
           <div class="card-desc">
             <div class="card-text">
-              <p>Cupcake ipsum dolor sit. Amet cake jelly beans tart donut caramels fruitcake gingerbread ice cream.
-                Fruitcake fruitcake caramels. Morbi maximus ipsum quis felis faucibus imperdiet. Nulla dapibus ante at
-                urna consectetur,
-                ac hendrerit justo facilisis.</p>
-              <p>Cake dragée marshmallow bear claw candy canes. Morbi maximus ipsum quis felis faucibus imperdiet. Nulla
-                dapibus ante at urna consectetur, ac hendrerit justo facilisis.
-                Liquorice sweet roll cotton candy pastry cupcake.</p>
-              <p>Sweet cupcake gingerbread muffin macaroon oat cake chocolate cake gummies. Morbi maximus ipsum quis
-                felis faucibus imperdiet. Nulla dapibus ante at urna consectetur,
-                ac hendrerit justo facilisis.Topping tiramisu halvah oat
-                cake jelly cheesecake tiramisu candy
-                canes oat cake.</p>
+              <p>Cześć, jestem Emilia. Obecnie szukam pierwszej pracy jako Front-end developer.</p>
+              <p>Moja przygoda z programowaniem zaczęła się w roku 2018, przerabiałam kursy na platformach e-learningowych, głównie udemy. 
+                W maju 2019 zdecydowałam się na zmianę swojej ścieżki kariery i od tamtego czasu systematycznie się uczę. Najpierw na bootcampie online (teamtreehouse.com), 
+                później wzięłam udział w trzymiesięcznym kursie CodersCamp, gdzie nauczyłam się nowych technologii, oraz pod okiem mentora przygotowałam 5 projektów,
+                 w tym 3 grupowe.</p>
+              <p>Wcześniej pracowałam jako asystentka w dziale księgowym w firmie Total Polska. Ta praca nauczyła mnie cierpliwości i większej dokładności 
+                w tym co robię. Myślę, że w pracy front-end developera te cechy również się przydają. </p>
             </div>
           </div>
         </div>
@@ -68,8 +65,7 @@
 
     <section id="skills">
       <div class="container">
-
-        <h2 class="section-title text-center">Skills</h2>
+        <h2 class="section-title text-center">Umiejętności</h2>
         <div class="skills-boxes">
           <div class="card card-html">
             <img class="card-picture" src="assets/html-icon.png" alt="HTML icon">
@@ -131,52 +127,49 @@
             </div>
           </div>
         </div>
-
     </section>
 
     <section id="portfolio">
       <h2 class="section-title text-center">Portfolio</h2>
-      <div class="img-wrapper">
-        <div class="img-mask">
+      <div class="portfolio-img-wrapper">
+        <div class="portfolio-img-mask">
           <p class="portfolio-text">Integer finibus mauris vitae nibh volutpat.</p>
           <button class="portfolio-btn">View</button>
         </div>
         <img class="portfolio-img" src="assets/flower.jpg" alt="">
       </div>
-      <div class="img-wrapper">
-        <div class="img-mask">
+
+      <div class="portfolio-img-wrapper">
+        <div class="portfolio-img-mask">
           <p class="portfolio-text">Donec nec felis sed nibh euismod imperdiet nec ut nunc.</p>
           <button class="portfolio-btn">View</button>
         </div>
         <img class="portfolio-img" src="assets/office.jpg" alt="">
-
       </div>
     </section>
 
     <section id="contact">
       <div class="container">
+        <h2 class="section-title text-center">Kontakt</h2>
+        <form class="contact-us">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder="johnsmith@example.com">
+          </div>
 
-      <h2 class="section-title text-center">Contact</h2>
-      <form class="contact-us">
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" placeholder="johnsmith@example.com">
-        </div>
+          <div class="form-group">
+            <label for="subject" class="">Tytuł</label>
+            <input type="text" placeholder="My Title">
+          </div>
 
-        <div class="form-group">
-          <label for="subject" class="">Title</label>
-          <input type="text" placeholder="My Title">
-        </div>
+          <div class="form-group">
+            <label for="message">Treść wiadomości</label>
+            <textarea type="text" id="message" placeholder="Message..."></textarea>
+          </div>
 
-        <div class="form-group">
-          <label for="message">Your message</label>
-          <textarea type="text" id="message" placeholder="Message..."></textarea>
-        </div>
-
-        <div class="submit-btn"><button type="button" class="submit">Submit</button></div>
-
-      </form>
-    </div>
+          <div class="submit-btn"><button type="button" class="submit">Wyślij</button></div>
+        </form>
+      </div>
 
     </section>
   </main>
