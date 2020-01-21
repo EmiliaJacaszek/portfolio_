@@ -17,27 +17,28 @@
 <body>
   <header class="header_bg">
     <div class="header_bg_mask"></div>
+    <nav class="main-nav">
+      <a id="nav-logo" href="#"><span>&lt;/&gt;</span> Emilia Jacaszek</a>
+      <button class="nav-btn"><i class="fas fa-bars white-btn"></i></button>
+      <div class="nav-items">
+        <ul class="nav-links">
+          <li><a href="#about">O mnie</a></li>
+          <li><a href="#skills">Umiejętności</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <ul class="social-icons">
+          <li><a href="https://github.com/EmiliaJacaszek" target=_blank><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/emilia-jacaszek-6a798b153/" target=_blank><i
+                class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://www.facebook.com" target=_blank><i class="fab fa-facebook-square"></i></a></li>
+        </ul>
+      </div>
+      <button class="white-btn collapse-btn"><i class="fas fa-times"></i></button>
+    </nav>
     <div class="container flex-center">
-      <nav class="main-nav">
-        <a id="nav-logo" href="#"><span>&lt;/&gt;</span> Emilia Jacaszek</a>
-        <button class="nav-btn"><i class="fas fa-bars white-btn"></i></button>
-        <div class="nav-items">
-          <ul class="nav-links">
-            <li><a href="#about">O mnie</a></li>
-            <li><a href="#skills">Umiejętności</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-          </ul>
-          <ul class="social-icons">
-            <li><a href="https://github.com/EmiliaJacaszek" target=_blank><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/emilia-jacaszek-6a798b153/" target=_blank><i
-                  class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.facebook.com" target=_blank><i class="fab fa-facebook-square"></i></a></li>
-          </ul>
-        </div>
-        <button class="white-btn collapse-btn"><i class="fas fa-times"></i></button>
-      </nav>
-      <h1 class="main-title">FRONT-END <div class="main-title-color"> DEVELOPER</div>
+
+      <h1 class="main-title">FRONT-END <span class="main-title-color"> DEVELOPER</span>
       </h1>
       <a class="angle-btn" href="#about"><i class="fas fa-angle-down angle-icon"></i></a>
     </div>
@@ -59,9 +60,6 @@
                 później wzięłam udział w trzymiesięcznym kursie CodersCamp, gdzie nauczyłam się nowych technologii, oraz
                 pod okiem mentora przygotowałam 5 projektów,
                 w tym 3 grupowe.</p>
-              <p>Wcześniej pracowałam jako asystentka w dziale księgowym w firmie Total Polska. Ta praca nauczyła mnie
-                cierpliwości i większej dokładności
-                w tym co robię. Myślę, że w pracy front-end developera te cechy również się przydają. </p>
             </div>
           </div>
         </div>
@@ -77,7 +75,9 @@
             <div class="card-desc">
               <h3 class="card-title text-center">HTML</h3>
               <div class="card-text">
-                <p>Dobra znajomość HTML5</p>
+                <p>Pisze semantycznie poprawny kod HTML. Wiem do czego służą poszczególne tagi i nie muszę zbyt często wspomagać się internetem.
+                  Umiem tworzyć tabele, listy, wykorzystać video czy audio player.
+                </p>
               </div>
             </div>
           </div>
@@ -87,7 +87,14 @@
             <div class="card-desc">
               <h3 class="card-title text-center">CSS</h3>
               <div class="card-text">
-                <p>Dobra znajomość CSS. Korzystanie z flexboxa, animacji, media queries, pseudoselektorów i pseudoklas oraz selektorów atrybutu</p>
+                <p>
+                  Dużo czasu poświęciłam nauce CSS, umiem korzystać z selektorów, pseudoselektorów,
+                  pseudoklas czy selektorów atrybutów i '+', czy '>' nie wywołują we mnie zakłopotania,
+                  wiem do czego służą i jak je wykorzystać.
+                  Do tworzenia układu na stronie wykorzystuje flexboxa, wiem również co to css-grid.
+                  Kolejnymi ważnymi elementami CSS'a, które przyswoiłam są animacje oraz media queries
+                  (czyli niezbędnik responsywnej strony).
+                </p>
               </div>
             </div>
           </div>
@@ -97,7 +104,11 @@
             <div class="card-desc">
               <h3 class="card-title text-center">JavaScript</h3>
               <div class="card-text">
-                <p>Dobra znajomość JavaScript. Nie są mi obce takie tematy jak: tablice, metody na tablicach, obiekty, klasy, funkcje, funkcje strzałkowe, pętle, Promisy, Async/Await. Korzystam również z biblioteki JQuery.</p>
+                <p>
+                  Nie są mi obce takie pojęcia jak: tablice, metody na tablicach, obiekty, klasy, funkcje,
+                  funkcje strzałkowe, pętle, Promisy, Async/Await. Pisząc kod zwracam uwagę na bieżące standardy i w miarę
+                  swojego pojmowania staram się wykorzystywać je w praktyce.
+                </p>
               </div>
             </div>
           </div>
@@ -107,7 +118,12 @@
             <div class="card-desc">
               <h3 class="card-title text-center">React</h3>
               <div class="card-text">
-                <p>Podstawowa znajomość biblioteki React.</p>
+                <p>
+                  Umiem tworzyć proste reactowe komponenty i przekazywać pomiędzy nimi dane.
+                  Nie są mi obce takie pojęcia jak propsy, state, pure functions.
+                  Wiem jak wygląda 'lifecycle' w react. Korzystałam z axios, aby połączyć aplikację z api.
+                  Jestem w trakcie nauki wykorzystywania tej biblioteki.
+                </p>
               </div>
             </div>
           </div>
@@ -117,10 +133,11 @@
             <div class="card-desc">
               <h3 class="card-title text-center">Redux</h3>
               <div class="card-text">
-                <p>Podstawowa znajomość biblioteki Redux.</p>
+                <p>Jestem w trakcie nauki, jak mogę wykorzystać store, akcje i reducery aby uwydajnić działanie tworzonych przeze mnie aplikacji.</p>
               </div>
             </div>
           </div>
+        </div>
         </div>
     </section>
 
@@ -139,33 +156,33 @@
         <ul class="carousel-container">
           <li class="carousel-item">
             <div class="carousel-img-mask">
-              <p class="portfolio-text">Użyte narzędzia: HTML, CSS, JavaScript</p>
-              <a href="https://emiliajacaszek.github.io/shelter/" target="_blank"><button class="portfolio-btn">View</button></a>
-              <a href="https://github.com/EmiliaJacaszek/shelter" target="_blank"><button class="portfolio-btn">Github</button></a>
+              <p class="portfolio-text">Użyte technologie: HTML, CSS, JavaScript</p>
+              <a href="https://emiliajacaszek.github.io/shelter/" class="portfolio-btn" target="_blank">View</a>
+              <a href="https://github.com/EmiliaJacaszek/shelter" class="portfolio-btn" target="_blank">Github</a>
             </div>
             <div class="item-1"></div>
           </li>
           <li class="carousel-item">
             <div class="item-2"></div>
             <div class="carousel-img-mask">
-              <p class="portfolio-text">Projekt grupowy w ramach kursu CodersCamp. Użyte narzędzia: JavaScript, Webpack, NPM, API</p>
-              <a href="https://emiliajacaszek.github.io/weatherapp/" target="_blank"><button class="portfolio-btn">View</button></a>
-              <a href="https://github.com/EmiliaJacaszek/weatherapp" target="_blank"><button class="portfolio-btn">Github</button></a>
+              <p class="portfolio-text">Projekt grupowy w ramach kursu CodersCamp. Użyte technologie: JavaScript, Webpack, NPM, API</p>
+              <a href="https://emiliajacaszek.github.io/weatherapp/" class="portfolio-btn" target="_blank">View</a>
+              <a href="https://github.com/EmiliaJacaszek/weatherapp" class="portfolio-btn" target="_blank">Github</a>
             </div>
           </li>
           <li class="carousel-item">
             <div class="carousel-img-mask">
-              <p class="portfolio-text">Projekt grupowy w ramach kursu CodersCamp. Uzyte narzędzia: Node.js, Express.js, MoongoDb</p>
-              <!-- <a href="" target="_blank"><button class="portfolio-btn">View</button></a> -->
-              <a href="https://github.com/EmiliaJacaszek/todoApp" target="_blank"><button class="portfolio-btn">Github</button></a>
+              <p class="portfolio-text">Projekt grupowy w ramach kursu CodersCamp. Uzyte technologie: Node.js, Express.js, MoongoDb</p>
+              <!-- <a href="" class="portfolio-btn" target="_blank">View</a> -->
+              <a href="https://github.com/EmiliaJacaszek/todoApp" class="portfolio-btn" target="_blank">Github</a>
             </div>
             <div class="item-3"></div>
           </li>
           <li class="carousel-item">
             <div class="carousel-img-mask">
-              <p class="portfolio-text">Projekt grupowy w ramach kursu CodersCamp. Użyte narzędzia: React, API</p>
-              <!-- <a href="" target="_blank"><button class="portfolio-btn">View</button></a> -->
-              <a href="https://github.com/EmiliaJacaszek/book-movies" target="_blank"><button class="portfolio-btn">Github</button></a>
+              <p class="portfolio-text">Projekt grupowy w ramach kursu CodersCamp. Użyte technologie: React, API</p>
+              <!-- <a href="" class="portfolio-btn" target="_blank">View</a> -->
+              <a href="https://github.com/EmiliaJacaszek/book-movies" class="portfolio-btn" target="_blank">Github</a>
             </div>
             <div class="item-4"></div>
           </li>
@@ -189,7 +206,7 @@
 
           <div class="form-group">
             <label for="message">Treść wiadomości</label>
-            <textarea type="text" id="message" placeholder="Message..."></textarea>
+            <textarea id="message" placeholder="Message..."></textarea>
           </div>
 
           <div class="submit-btn"><button type="button" class="submit">Wyślij</button></div>
