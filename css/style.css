@@ -133,10 +133,6 @@ h5 {
     z-index: 100001;
 }
 
-.collapse-btn.active {
-    display: block;
-}
-
 .nav-links,
  #nav-logo {
     text-decoration: none;
@@ -226,7 +222,6 @@ h5 {
 
 section {
     margin-top: 3rem;
-    margin-bottom: 7rem;
 }
 
 .section-title {
@@ -234,7 +229,8 @@ section {
     margin-bottom: 6rem;
     font-size: 2rem;
     font-weight: 700;
-    color: rgb(158, 14, 78)
+    color: rgb(158, 14, 78);
+    padding-top: 1.5rem;
 }
 
 /* ------ CARDS ------ */
@@ -642,7 +638,7 @@ footer {
         display: none;
     }
 
-    .nav-items-row {
+    .nav-items {
         display: flex;
         flex-direction: row;
         position: absolute;
@@ -656,15 +652,15 @@ footer {
         margin-right: 1rem;
     }
     
-    .nav-items-row .nav-links {
+    .nav-items .nav-links {
         flex-direction: row;
     }
 
-    .nav-items-row li {
+    .nav-items li {
         margin-top: 0;
     }
 
-    .nav-items-row li:hover {
+    .nav-items li:hover {
         opacity: 0.7;
 
     }
@@ -692,6 +688,7 @@ footer {
 
     section {
         padding-top: 3rem;
+        padding-bottom: 6rem;
     }
 
     .card-about {
