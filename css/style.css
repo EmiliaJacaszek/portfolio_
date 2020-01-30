@@ -99,10 +99,6 @@ h5 {
     color: var(--white);
 }
 
-.collapse-btn {
-    display: none;
-}
-
 #nav-logo {
     text-shadow: 6px 7px 3px rgba(0, 0, 0, 0.8);
     font-family: 'Merienda', cursive;
@@ -135,7 +131,11 @@ h5 {
     right: 1rem;
     top: 1rem;
     z-index: 100001;
-} 
+}
+
+.collapse-btn.active {
+    display: block;
+}
 
 .nav-links,
  #nav-logo {
@@ -639,11 +639,6 @@ footer {
     }
 
     .nav-btn {
-        display: none;
-    }
-
-    .nav-items,
-    .collapse-btn {
         display: none;
     }
 
