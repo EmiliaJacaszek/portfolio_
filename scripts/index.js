@@ -8,6 +8,30 @@ var totalItems = container.querySelectorAll('.carousel-item').length;
 var percent = (100 / totalItems);
 var currentIndex = 0;
 
+let navBtn = document.querySelector('.nav-btn');
+let navItems = document.querySelector('.nav-items');
+let navItemsRow = document.querySelector('.nav-items-row');
+let collapseBtn = document.querySelector('.collapse-btn');
+
+if (window.screen.width <= 991 && window.screen.height <= 1366) {
+    navBtn.addEventListener('click', () => {
+        navItems.style.display = 'block';
+        collapseBtn.style.display = 'block';
+    });
+
+    collapseBtn.addEventListener('click', () => {
+        navItems.style.display = 'none';
+        collapseBtn.style.display = 'none';
+    });
+
+    navItems.addEventListener('click', () => {
+        navItems.style.display = 'none';
+        collapseBtn.style.display = 'none';
+    });
+}
+
+
+
 function next() {
     slideTo(currentIndex + 1);
 }

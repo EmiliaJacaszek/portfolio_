@@ -120,16 +120,11 @@ h5 {
     width: 100%;
     background: rgba(45, 41, 59, 0.95);
     z-index: 100000;
+    padding-top: 8rem;
 }
 
-.nav-btn:focus+.nav-items,
-.nav-items:hover {
-    display: flex;
-}
-
-.nav-items:hover+.collapse-btn,
-.nav-btn:focus~.collapse-btn {
-    display: block;
+.collapse-btn {
+    display: none;
     border: 0;
     border-radius: 0.3rem;
     padding: 0.4rem 0.5rem;
@@ -140,7 +135,7 @@ h5 {
     right: 1rem;
     top: 1rem;
     z-index: 100001;
-}
+} 
 
 .nav-links,
  #nav-logo {
@@ -294,6 +289,7 @@ section {
 
 .card-text p {
     margin-top: 0.5rem;
+    word-wrap: break-word;
 }
 
 /* ----- SKILLS SECTION ----- */
@@ -554,10 +550,9 @@ section {
     border: none;
     border-radius: 0.2rem;
     box-shadow: 0px 3px 4px 0px #223950;
-    background-color: rgba(40, 167, 69, 0.9);
-    color: rgb(50, 53, 53);
+    background-color: rgba(158, 14, 78, 0.9);
+    color: rgb(255, 235, 244);
     padding: 0.5rem 1.7rem;
-    cursor: pointer;
     font-size: 1rem;
     margin-top: 1.6rem;
     letter-spacing: 0.05rem;
@@ -616,20 +611,10 @@ footer {
         right: 2rem;
     }
 
-    .nav-items:hover+.collapse-btn,
-    .nav-btn:focus~.collapse-btn {
-        display: block;
-        border: 0;
-        border-radius: 0.3rem;
-        padding: 0.4rem 0.5rem;
-        background-color: transparent;
+    .collapse-btn {
         font-size: 2rem;
-        cursor: pointer;
-        position: fixed;
         right: 2rem;
-        top: 1rem;
-        z-index: 10001;
-    }
+    } 
 
     .card-about {
         font-size: 1.1rem;
@@ -640,6 +625,12 @@ footer {
 @media(min-width: 992px) {
     .main-nav {
         font-size: 1.3rem;
+        padding-top: 2rem;
+        margin-right: 1rem;
+    }
+
+    #nav-logo {
+        margin-left: 4rem;
     }
 
     .container {
@@ -651,12 +642,12 @@ footer {
         display: none;
     }
 
-    .nav-items:hover+.collapse-btn,
-    .nav-btn:focus~.collapse-btn {
+    .nav-items,
+    .collapse-btn {
         display: none;
     }
 
-    .nav-items {
+    .nav-items-row {
         display: flex;
         flex-direction: row;
         position: absolute;
@@ -666,17 +657,19 @@ footer {
         bottom: unset;
         left: unset;
         width: auto;
+        padding-top: 1rem;
+        margin-right: 1rem;
     }
     
-    .nav-items .nav-links {
+    .nav-items-row .nav-links {
         flex-direction: row;
     }
 
-    .nav-items li {
+    .nav-items-row li {
         margin-top: 0;
     }
 
-    .nav-items li:hover {
+    .nav-items-row li:hover {
         opacity: 0.7;
 
     }
@@ -711,6 +704,9 @@ footer {
         line-height: 1.5;
     }
 
+    .card-text p {
+        line-height: 2;
+    }
 
     .portfolio-text {
         font-size: 1.5rem;
@@ -749,6 +745,14 @@ footer {
         padding: 2rem 1rem;
         border-radius: 0.25rem;
         max-width: 500px;
+    }
+
+    .submit {
+        cursor: pointer;
+    }
+
+    .submit:hover {
+        background-color: rgba(158, 14, 78, 0.8);
     }
 
     .skills-boxes .card {
