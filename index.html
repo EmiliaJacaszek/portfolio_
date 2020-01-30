@@ -18,22 +18,22 @@
     <div class="header_bg_mask"></div>
     <nav class="main-nav">
       <a id="nav-logo" href="#"><span>&lt;/&gt;</span> Emilia Jacaszek</a>
-      <button class="nav-btn"><i class="fas fa-bars white-btn"></i></button>
+      <button class="nav-btn" arria-label="otwarcie menu"><i class="fas fa-bars white-btn"></i></button>
       <div class="nav nav-items">
         <ul class="nav-links">
-          <li><a href="#about">O mnie</a></li>
-          <li><a href="#skills">Umiejętności</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#about" aria-label="O mnie">O mnie</a></li>
+          <li><a href="#skills" aria-label="Umiejętności">Umiejętności</a></li>
+          <li><a href="#portfolio" aria-label="Portfolio">Portfolio</a></li>
+          <li><a href="#contact" aria-label="Kontakt">Kontakt</a></li>
         </ul>
         <ul class="social-icons">
-          <li><a href="https://github.com/EmiliaJacaszek" target=_blank><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/emilia-jacaszek-6a798b153/" target=_blank><i
+          <li><a href="https://github.com/EmiliaJacaszek" target=_blank rel="noopener" aria-label="Github"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/emilia-jacaszek-6a798b153/" target=_blank rel="noopener" aria-label="Linkedin"><i
                 class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://www.facebook.com" target=_blank><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="https://www.facebook.com" target=_blank rel="noopener"><i class="fab fa-facebook-square" aria-label="Facebook"></i></a></li>
         </ul>
       </div>
-      <button class="white-btn collapse-btn"><i class="fas fa-times"></i></button>
+      <button class="white-btn collapse-btn" arria-label="zamknięcie menu"><i class="fas fa-times"></i></button>
     </nav>
     <div class="container flex-center">
 
@@ -156,8 +156,8 @@
           <li class="carousel-item">
             <div class="carousel-img-mask">
               <p class="portfolio-text">Użyte technologie: HTML, CSS, JavaScript</p>
-              <a href="https://emiliajacaszek.github.io/shelter/" class="portfolio-btn" target="_blank">View</a>
-              <a href="https://github.com/EmiliaJacaszek/shelter" class="portfolio-btn" target="_blank">Github</a>
+              <a href="https://emiliajacaszek.github.io/shelter/" class="portfolio-btn" target="_blank" rel="noopener">View</a>
+              <a href="https://github.com/EmiliaJacaszek/shelter" class="portfolio-btn" target="_blank" rel="noopener">Github</a>
             </div>
             <div class="item-1"></div>
           </li>
@@ -165,15 +165,15 @@
             <div class="item-2"></div>
             <div class="carousel-img-mask">
               <p class="portfolio-text">Projekt grupowy w ramach kursu CodersCamp. Użyte technologie: JavaScript, Webpack, NPM, API</p>
-              <a href="https://emiliajacaszek.github.io/weatherapp/" class="portfolio-btn" target="_blank">View</a>
-              <a href="https://github.com/EmiliaJacaszek/weatherapp" class="portfolio-btn" target="_blank">Github</a>
+              <a href="https://emiliajacaszek.github.io/weatherapp/" class="portfolio-btn" target="_blank" rel="noopener">View</a>
+              <a href="https://github.com/EmiliaJacaszek/weatherapp" class="portfolio-btn" target="_blank" rel="noopener">Github</a>
             </div>
           </li>
           <li class="carousel-item">
             <div class="carousel-img-mask">
               <p class="portfolio-text">Projekt grupowy w ramach kursu CodersCamp. Uzyte technologie: Node.js, Express.js, MoongoDb</p>
               <!-- <a href="" class="portfolio-btn" target="_blank">View</a> -->
-              <a href="https://github.com/EmiliaJacaszek/todoApp" class="portfolio-btn" target="_blank">Github</a>
+              <a href="https://github.com/EmiliaJacaszek/todoApp" class="portfolio-btn" target="_blank" rel="noopener">Github</a>
             </div>
             <div class="item-3"></div>
           </li>
@@ -181,7 +181,7 @@
             <div class="carousel-img-mask">
               <p class="portfolio-text">Projekt grupowy w ramach kursu CodersCamp. Użyte technologie: React, API</p>
               <!-- <a href="" class="portfolio-btn" target="_blank">View</a> -->
-              <a href="https://github.com/EmiliaJacaszek/book-movies" class="portfolio-btn" target="_blank">Github</a>
+              <a href="https://github.com/EmiliaJacaszek/book-movies" class="portfolio-btn" target="_blank" rel="noopener">Github</a>
             </div>
             <div class="item-4"></div>
           </li>
@@ -208,7 +208,7 @@
             <textarea id="message" placeholder="Message..."></textarea>
           </div>
 
-          <div class="submit-btn"><button type="button" class="submit">Wyślij</button></div>
+          <div class="submit-btn"><button type="button" class="submit" arria-label="Wyślij">Wyślij</button></div>
         </form>
       </div>
 

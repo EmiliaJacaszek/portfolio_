@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: var(--big-font-size);
 }
 
 h4 {
@@ -86,7 +86,7 @@ h5 {
     padding: 0.4rem 0.5rem;
     background-color: var(--main-nav-btn);
     box-shadow: 1px 1px 1px 0px rgba(39, 39, 39, 0.3);
-    font-size: 1.5rem;
+    font-size: var(--big-font-size);
     cursor: pointer;
     position: fixed;
     right: 1rem;
@@ -204,7 +204,7 @@ h5 {
     color: rgb(37, 66, 104);
     height: 10rem;
     width: 10rem;
-    font-size: 1.5rem;
+    font-size: var(--big-font-size);
     animation: shine 3s ease-in-out infinite;
 }
 
@@ -334,7 +334,7 @@ section {
 
 .carousel-item > div {
     height: 400px;
-    font-size: 1.5em;
+    font-size: var(--big-font-size);
     text-align: center;
     color: #fff;
 }
@@ -701,7 +701,7 @@ footer {
     }
 
     .portfolio-text {
-        font-size: 1.5rem;
+        font-size: var(--big-font-size);
         margin: 0 2rem 5rem 5rem;
         margin-bottom: 2rem;
     }
