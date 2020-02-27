@@ -58,7 +58,7 @@ h5 {
     position: relative;
     color: var(--white);
     box-shadow: 0px 1px 18px 0px rgba(60, 0, 10, 0.7);
-}
+} 
 
 .header_bg_mask {
     content: "";
@@ -347,7 +347,7 @@ section {
 }
 
 .item-2 {
-    background: url(../assets/weatherapp.png);
+    background: url(../assets/weatherapp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -16,7 +16,7 @@ let collapseBtn = document.querySelector('.collapse-btn');
 navBtn.addEventListener('click', () => {
     collapseBtn.style.display = 'block';
     if(window.innerWidth <=991) {
-    navItems.style.display = 'block';
+        navItems.style.display = 'block';
     } else {
         navItems.style.display = 'flex';
     }
